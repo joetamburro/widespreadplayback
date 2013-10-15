@@ -1,5 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+@import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
+
 @import 'sass-bootstrap/lib/bootstrap';
 
 .browsehappy {
@@ -25,16 +27,26 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
+   margin-bottom: 15px;
 }
+
+
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+    line-height: 45px;
+    padding-bottom: 10px;
 }
+
+.text-muted {
+        text-align: right;
+        font-family: 'Quantico', sans-serif;
+        text-transform: uppercase;
+        color: rgb(97, 23, 23);
+}
+
 
 /* Custom page footer */
 .footer {
@@ -49,8 +61,12 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+    height: 500px;
+    width: 930px;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    background-color: rgb(88, 51, 51);
+    margin: 0 auto;
 }
 
 .jumbotron .btn {
@@ -70,7 +86,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 960px;
     }
 
     /* Remove the padding we set earlier */
@@ -82,10 +98,23 @@ body {
     }
     /* Space out the masthead */
     .header {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
     }
 }
+
+
+/**********************Custom styles************************/
+
+.glyphicon-expand {
+    font-size: 52px;
+    margin-left: 6px;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg); /* Safari and Chrome */
+    color: rgb(163, 51, 51);
+}
+
