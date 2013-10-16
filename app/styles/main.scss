@@ -38,6 +38,10 @@ body {
     margin-bottom: 0;
     line-height: 45px;
     padding-bottom: 10px;
+
+    @media (max-width: 420px){
+        font-size: 16px;
+    }
 }
 
 .text-muted {
@@ -53,35 +57,26 @@ body {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+    text-align: right;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
-}
 
 /* Main marketing message and sign up button */
 .jumbotron {
     height: 500px;
-    width: 930px;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
     background-color: rgb(88, 51, 51);
     margin: 0 auto;
+    padding: 0;
+    position: relative;
+    border-radius: 10px;
 }
 
 .jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -116,5 +111,27 @@ body {
     -ms-transform:rotate(180deg); /* IE 9 */
     -webkit-transform:rotate(180deg); /* Safari and Chrome */
     color: rgb(163, 51, 51);
+
+    @media (max-width: 420px) {
+        font-size: 36px;
+    }
 }
 
+.navigation-bar {
+    height: 50px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(128, 76, 76);
+}
+
+.jumbo-footer {
+    height: 100px;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(128, 76, 76);    
+}
