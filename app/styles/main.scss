@@ -15,6 +15,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: rgb(247, 247, 247);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -125,6 +126,19 @@ body {
     left: 0;
     right: 0;
     background-color: rgb(128, 76, 76);
+
+    ul {
+        text-align: left;
+    }
+    
+    li {
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        font-size: 14px;
+        color: white;
+        margin-right: 20px;
+    }
 }
 
 .jumbo-footer {
