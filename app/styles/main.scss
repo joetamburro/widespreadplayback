@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
-
+@import url(http://fonts.googleapis.com/css?family=Expletus+Sans);
 @import 'sass-bootstrap/lib/bootstrap';
 
 .browsehappy {
@@ -139,6 +139,8 @@ body {
         font-size: 14px;
         color: white;
         margin-right: 20px;
+        font-family: 'Expletus Sans', cursive;
+        text-transform: uppercase;
     }
 }
 
@@ -167,3 +169,35 @@ body {
     outline-color: rgb(236, 193, 193);
 
 }
+
+/*********** CONTENT AREA **************/
+
+.content-area {
+    position: absolute;
+    left: 6px;
+    top: 60px;
+    height: 330px;
+    width: 98.5%;
+}
+
+/************** HOME VIEW *********************/
+
+.today {
+    color: rgb(255, 255, 255);
+}
+.left-home {
+    position: absolute;
+    left: 25px;
+    top: 115px;
+    font-size: 125px;
+    color: rgb(255, 255, 255);
+}
+
+.right-home {
+    position: absolute;
+    right: 25px;
+    top: 80px;
+    font-size: 125px;
+    color: rgb(255, 255, 255);
+    transform:rotate(360deg);
+}  

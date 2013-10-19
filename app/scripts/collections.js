@@ -1,0 +1,4 @@
+ShowsCollection = Backbone.Collection.extend ({
+
+  
+})
