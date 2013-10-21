@@ -16,6 +16,7 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -44,18 +45,44 @@
                         <a href="#"><li>Currently Playing</li></a>
                     </ul>
 
-                    <input id="main-search" type="search"></input>
+                    <input id="main-search" type="search">
+
+
+                    </input>
+                    <button type="button" class="btn btn-primary btn-sm submit">Search</button>
 
                 </div>
 
                 <div class="content-area">
                     
                     <div class="today">Today in WSP History</div>
-
+                    
+                    <div class="home-combo">
+                        <select id="home-year">
+                            <option value="1996">1996</option>
+                        </select>   
+                    </div>
+                    
                     <a href="#"><div class="glyphicon glyphicon-expand left-home"></div></a>
 
-                    <div class="image-scroll">
-                        <img src="http://www.glidemagazine.com/hiddentrack/wp-content/uploads/2010/02/4288010327_e97d875edf_b-400x317.jpg">
+                    <div class="setlist-scroll">
+                       <ol id="home-setlist">
+                        <li>hfsssssss</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                       </ol>
                     </div>
 
                     <div class="glyphicon glyphicon-expand right-home"></div>
@@ -97,6 +124,9 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+        </script>
+
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
         <!-- endbower -->

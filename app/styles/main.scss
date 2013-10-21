@@ -154,6 +154,8 @@ body {
     background-color: rgb(128, 76, 76);    
 }
 
+/*********** search box *************/
+
 #main-search {
     position: absolute;
     right: 9px;
@@ -170,6 +172,22 @@ body {
 
 }
 
+.submit {
+display: inline-block;
+position: absolute;
+top: 11px;
+right: 8px;
+height: 28px;
+border-radius: 0px 2px 2px 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(218, 116, 116);
+border-color: rgb(228, 115, 115);
+}
+
+.submit:hover{
+    background-color: rgb(148, 42, 42);
+    border-color: rgb(148, 42, 42);
+}
 /*********** CONTENT AREA **************/
 
 .content-area {
@@ -184,6 +202,9 @@ body {
 
 .today {
     color: rgb(255, 255, 255);
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
 }
 .left-home {
     position: absolute;
@@ -201,3 +222,20 @@ body {
     color: rgb(255, 255, 255);
     transform:rotate(360deg);
 }  
+
+.setlist-scroll {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border: 2px solid grey;
+    overflow: scroll;
+    color: white;
+    text-align: left;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+#home-setlist {
+    padding-left: 25px;
+    list-style-position: inside;
+}
