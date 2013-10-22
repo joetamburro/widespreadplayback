@@ -205,6 +205,8 @@ border-color: rgb(228, 115, 115);
     height: 18px;
     line-height: 18px;
     font-size: 18px;
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
 }
 .left-home {
     position: absolute;
@@ -225,17 +227,24 @@ border-color: rgb(228, 115, 115);
 
 .setlist-scroll {
     display: inline-block;
+    position: relative;
+    top: -12px;
     height: 250px;
-    width: 250px;
+    width: 350px;
     border: 2px solid grey;
     overflow: scroll;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: left;
     line-height: 12px;
     font-size: 12px;
 }
 
 #home-setlist {
-    padding-left: 25px;
+    padding-left: 0px;
     list-style-position: inside;
+}
+
+#home-year {
+    position: relative;
+    top: -10px;
 }
