@@ -208,22 +208,7 @@ border-color: rgb(228, 115, 115);
     font-family: 'Quantico', sans-serif;
     text-transform: uppercase;
 }
-.left-home {
-    position: absolute;
-    left: 25px;
-    top: 115px;
-    font-size: 125px;
-    color: rgb(255, 255, 255);
-}
 
-.right-home {
-    position: absolute;
-    right: 25px;
-    top: 80px;
-    font-size: 125px;
-    color: rgb(255, 255, 255);
-    transform:rotate(360deg);
-}  
 
 .setlist-scroll {
     display: inline-block;
@@ -247,4 +232,54 @@ border-color: rgb(228, 115, 115);
 #home-year {
     position: relative;
     top: -10px;
+}
+
+.left-arrow {
+    position: absolute;
+    height: 127px;
+    width: 127px;
+    left: 100px;
+    top: 100px;
+}
+
+.outer-box-left {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 45px;
+    background-color: rgb(255, 255, 255);
+}
+
+.inner-box-left {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 16px;
+    height: 90px;
+    width: 90px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(88, 51, 51);
+    z-index: 5;
+}
+
+.left-triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 28.5px 53.8px 28.5px 0;
+    border-color: transparent #ffffff transparent transparent;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.right-triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 34.5px 0 34.5px 59.8px;
+    border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    right: 100px;
+    top: 120px;
 }
