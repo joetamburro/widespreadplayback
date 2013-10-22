@@ -1,7 +1,9 @@
+console.log('hello router script')
+
 AppRouter = Backbone.Router.extend ({
 
   initialize: function(){
-    console.log('hi')
+    new HomeView()
   },
 
   routes: {
@@ -10,20 +12,15 @@ AppRouter = Backbone.Router.extend ({
     "date"                : "dateView",
     "location"            : "mapView",
     "currently-playing"   : "currentlyPlaying"
-  }
+  },
 
-
-
-
-
-
-
-
-
-
-
-
-
+  currentlyPlaying: function(){
+    $('.content-area').html('')
+    new CurrentlyPlayingView()
+  },
 
 
 })
+
+var router = new AppRouter()
+Backbone.history.start()

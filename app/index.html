@@ -23,8 +23,6 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
         <div class="container">
 
             <div class="header">
@@ -40,10 +38,10 @@
                 <div class="navigation-bar">
 
                     <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Date</li></a>
-                        <a href="#"><li>Location</li></a>
-                        <a href="#"><li>Currently Playing</li></a>
+                        <a href="#"><li id="home">Home</li></a>
+                        <a href="#"><li id="date">Date</li></a>
+                        <a href="#"><li id="location">Location</li></a>
+                        <a href="#"><li id="currently-playing">Currently Playing</li></a>
                     </ul>
 
                     <input id="main-search" type="search">
@@ -55,27 +53,8 @@
                 </div>
 
                 <div class="content-area">
-                    
-                    <div class="today">Today in WSP History</div>
-                    
-                    <div class="home-combo">
-                        <select id="home-year">
-                            <option value="1996">1996</option>
-                        </select>   
-                    </div>
-                    
-                    <div class="glyphicon glyphicon-expand left-home"><a href="#"></div>
-                    
-                    <div class="setlist-scroll">
-                       <ol id="home-setlist">
-                 
-                       </ol>
-                    </div>
-
-                    <div class="glyphicon glyphicon-expand right-home"></div>
 
                 </div>
-         
                 <div class="jumbo-footer">
 
                 </div>         
@@ -84,26 +63,38 @@
 
 
             <div class="footer">
-                <p>♥ from PanicStream and Old Joe</p>
+                <p>♥ from PanicStream, Masondesu, and Old Joe</p>
             </div>
 
         </div>
 
         <script type="text/template" id="home-view-template">
+            <div class="today">Today in WSP History</div>
+                    
+            <div class="home-combo">
+                <select id="home-year">
+                    <option value="1996">1996</option>
+                </select>   
+            </div>
+                    
+            <div class="glyphicon glyphicon-expand left-home"></div>
+                    
+            <div class="setlist-scroll">
+               <ol id="home-setlist">
+                    <li>hi</li>
+               </ol>
+            </div>
 
-            <div class="glyphicon glyphicon-expand"></div>
+            <div class="glyphicon glyphicon-expand right-home"></div>
+        </script>
+
+        <script type="text/template" id="currently-playing-template">
+
+            <div class="glyphicon glyphicon-expand left-home"></div>
 
 
 
-
-
-
-
-
-
-
-
-
+            <div class="glyphicon glyphicon-expand right-home"></div>
 
         </script>
 
@@ -130,7 +121,6 @@
         </script>
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
         <script src="scripts/views.js"></script>
         <script src="scripts/models.js"></script>
         <script src="scripts/collections.js"></script>
