@@ -72,7 +72,7 @@ body {
     padding: 0;
     position: relative;
     box-shadow: 0 12px 9px -8px rgb(85, 62, 62);
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
 .jumbotron .btn {
@@ -121,7 +121,7 @@ body {
 
 .navigation-bar {
     height: 50px;
-    border-radius: 10px 10px 0px 0px;   
+    border-radius: 6px 6px 0px 0px;   
     position: absolute;
     left: 0;
     right: 0;
@@ -146,7 +146,7 @@ body {
 
 .jumbo-footer {
     height: 100px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -173,21 +173,21 @@ body {
 }
 
 .submit {
-display: inline-block;
-position: absolute;
-top: 11px;
-right: 8px;
-height: 28px;
-border-radius: 0px 2px 2px 0px;
-color: rgb(255, 255, 255);
-background-color: rgb(218, 116, 116);
-border-color: rgb(228, 115, 115);
-box-shadow: inset 0px 0px 5px 0px rgb(224, 152, 152);
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    height: 28px;
+    border-radius: 0px 2px 2px 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(148, 42, 42);
+    border-color: rgb(148, 42, 42);
+    box-shadow: inset 0px 0px 5px 0px rgb(224, 152, 152);
 }
 
 .submit:hover{
-    background-color: rgb(148, 42, 42);
-    border-color: rgb(148, 42, 42);
+    background-color: rgb(218, 116, 116);
+    border-color: rgb(228, 115, 115);
 }
 /*********** CONTENT AREA **************/
 

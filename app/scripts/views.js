@@ -4,6 +4,10 @@ HomeView = Backbone.View.extend({
 
   template: _.template( $('#home-view-template').text() ),
 
+  events: {
+    "click  #currently-playing" : "currentlyPlaying",
+  },
+
   initialize: function(){
     $('.content-area').append(this.el)
     this.render()
@@ -12,6 +16,11 @@ HomeView = Backbone.View.extend({
 
   render: function(){
     this.$el.append(this.template)
+  },
+
+  currentlyPlaying: function (){
+    $('.content-area').html('')
+    new CurrentlyPlayingView()
   },
 
 }),

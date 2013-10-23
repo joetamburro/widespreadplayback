@@ -38,10 +38,10 @@
                 <div class="navigation-bar">
 
                     <ul>
-                        <a href="#"><li id="home">Home</li></a>
+                        <a href="#/home"><li id="home">Home</li></a>
                         <a href="#"><li id="date">Date</li></a>
                         <a href="#"><li id="location">Location</li></a>
-                        <a href="#"><li id="currently-playing">Currently Playing</li></a>
+                        <a href="#/currently-playing"><li id="currently-playing">Currently Playing</li></a>
                     </ul>
 
                     <input id="main-search" type="search">
@@ -106,11 +106,36 @@
 
         <script type="text/template" id="currently-playing-template">
 
-            <div class="glyphicon glyphicon-expand left-home"></div>
+            <div class="today">May 5, 2010</div>
+                    
+            <div class="home-combo">
+                <select id="home-year">
+                    <option value="1996"></option>
+                </select>   
+            </div>
+            <div class="left-arrow">  
+                <div class="outer-box-left">
+                    <div class="inner-box-left">
+                        <div class="left-triangle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="setlist-scroll">
+               <ol id="home-setlist">
+                    <li>hi</li>
+               </ol>
+            </div>
 
-
-
-            <div class="glyphicon glyphicon-expand right-home"></div>
+             <div class="right-arrow">  
+                <div class="outer-box-left">
+                    <div class="inner-box-left">
+                        <div class="right-triangle">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </script>
 

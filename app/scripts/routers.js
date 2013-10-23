@@ -14,10 +14,16 @@ AppRouter = Backbone.Router.extend ({
     "currently-playing"   : "currentlyPlaying"
   },
 
+  homeView: function(){
+    $('.content-area').html('')
+    new HomeView()
+  },
+
   currentlyPlaying: function(){
     $('.content-area').html('')
     new CurrentlyPlayingView()
   },
+
 
 
 })
