@@ -130,9 +130,9 @@ body {
 
     ul {
         text-align: left;
-        padding-left: 15px;
+        padding: 0px;
     }
-    
+
     li {
         display: inline-block;
         text-decoration: none;
@@ -140,7 +140,21 @@ body {
         font-size: 14px;
         color: white;
         margin-right: 20px;
+        margin-left: 12px;
         font-family: 'Expletus Sans', cursive;
+        transition: 0.05s ease;
+    }
+    li:hover{
+        color: rgb(247, 116, 98);
+        padding: 12px;
+        background-color: #F8F8F8;
+        margin: 0 8px 0 0;
+    }
+    li:active{
+        color: rgb(247, 116, 98);
+        padding: 12px;
+        background-color: rgb(248, 248, 248);
+        margin-left: 0px;
     }
 }
 
@@ -217,35 +231,36 @@ outline-style: solid;
     position: relative;
     top: -12px;
     height: 275px;
-    width: 350px;
+    width: 450px;
     overflow: scroll;
     color: rgb(99, 51, 51);
     text-align: left;
     line-height: 12px;
     font-size: 12px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: inset 1px 0px 4px 2px rgb(102, 57, 57);
+    background-color: rgb(248, 248, 248);
 }
 
 #home-setlist {
     padding-left: 0px;
     padding-top: 8px;
     list-style-position: inside;
-    text-align: center;
+    text-align: left;
     font-family: 'Rokkitt', serif;
+    margin-top: -10px;
 
     ol {
-        color: rgb(19, 15, 136);
-        font-size: 18px;
-        line-height: 18px;
+        color: rgb(115, 115, 115);
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
         padding-left: 0px;
-
-        span {
-            text-decoration: underline;
-            color: #000;
-            font-weight: 500;
-
         }
+    
+
+    li {
+        border-top: 1px solid grey;
+        padding: 10px;
+        font-size: 14px;
     }
 }
 
@@ -265,7 +280,7 @@ outline-style: solid;
     height: 0px;
     border-style: solid;
     border-width: 28.5px 15.8px 28.5px 0;
-    border-color: transparent #6DC5DD transparent transparent;
+    border-color: transparent #737373 transparent transparent;
     margin: 0 auto;
     margin-top: 16px;
 }
@@ -282,7 +297,13 @@ outline-style: solid;
     height: 0px;
     border-style: solid;
     border-width: 28.5px 0 28.5px 15.8px;
-    border-color: transparent transparent transparent #6DC5DD;
+    border-color: transparent transparent transparent #737373;
     margin: 0 auto;
     margin-top: 16px;
+}
+
+
+.set {
+    width: 100%;
+
 }
