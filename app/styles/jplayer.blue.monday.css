@@ -156,6 +156,7 @@ a.jp-pause {
 
 a.jp-play {
 	background: url("play_button.png") 0 0 no-repeat;
+	background-size: 39px;
 }
 /*a.jp-play:hover {
 	background: url("jplayer.blue.monday.jpg") -41px 0 no-repeat;
