@@ -2,7 +2,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
 @import url(http://fonts.googleapis.com/css?family=Expletus+Sans);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
 @import 'sass-bootstrap/lib/bootstrap';
+
 
 .browsehappy {
     margin: 0.2em 0;
@@ -182,8 +184,7 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(148, 42, 42);
     border-color: rgb(148, 42, 42);
-    box-shadow: inset 0px 0px 5px 0px rgb(224, 152, 152);
-}
+    box-shadow: inset 0px 0px 5px 0px rgb(112, 37, 37);}
 
 .submit:hover{
     background-color: rgb(218, 116, 116);
@@ -215,7 +216,7 @@ body {
     display: inline-block;
     position: relative;
     top: -12px;
-    height: 250px;
+    height: 275px;
     width: 350px;
     overflow: scroll;
     color: rgb(99, 51, 51);
@@ -227,9 +228,25 @@ body {
 }
 
 #home-setlist {
-    padding-left: 8px;
+    padding-left: 0px;
     padding-top: 8px;
     list-style-position: inside;
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+
+    ol {
+        color: rgb(19, 15, 136);
+        font-size: 18px;
+        line-height: 18px;
+        padding-left: 0px;
+
+        span {
+            text-decoration: underline;
+            color: #000;
+            font-weight: 500;
+
+        }
+    }
 }
 
 #home-year {
@@ -239,38 +256,15 @@ body {
 
 .left-arrow {
     position: absolute;
-    height: 127px;
-    width: 127px;
-    left: 100px;
-    top: 100px;
-}
-
-.outer-box-left {
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 45px;
-    background-color: rgb(255, 255, 255);
-}
-
-.inner-box-left {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 16px;
-    height: 90px;
-    width: 90px;
-    border: 1px solid white;
-    border-radius: 15px;
-    background-color: rgb(88, 51, 51);
-    z-index: 5;
+    left: 200px;
+    top: 125px;
 }
 
 .left-triangle {
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 28.5px 53.8px 28.5px 0;
+    border-width: 28.5px 15.8px 28.5px 0;
     border-color: transparent #ffffff transparent transparent;
     margin: 0 auto;
     margin-top: 16px;
@@ -278,10 +272,8 @@ body {
 
 .right-arrow {
     position: absolute;
-    height: 127px;
-    width: 127px;
-    right: 100px;
-    top: 100px;
+    right: 200px;
+    top: 125px;
 }
 
 
@@ -289,7 +281,7 @@ body {
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 28.5px 0 28.5px 53.8px;
+    border-width: 28.5px 0 28.5px 15.8px;
     border-color: transparent transparent transparent #ffffff;
     margin: 0 auto;
     margin-top: 16px;
