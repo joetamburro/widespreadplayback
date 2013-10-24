@@ -654,12 +654,11 @@ a.jp-shuffle-off:hover {
 
 div.jp-title {
 
-  background-color: rgb(128, 76, 76);
+  background-color: rgb(206, 86, 86);
 }
 
 div.jp-gui.jp-interface {
-	   background-color: rgb(128, 76, 76);
-	   border-radius: 0px 0px 6px 6px;
+	   background-color: rgb(206, 86, 86);
 }
 
 .play {

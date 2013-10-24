@@ -17,7 +17,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgb(247, 247, 247);
+    background-color: #525252;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -52,7 +52,7 @@ body {
         text-align: right;
         font-family: 'Quantico', sans-serif;
         text-transform: uppercase;
-        color: rgb(97, 23, 23);
+        color: rgb(255, 255, 255);
 }
 
 
@@ -61,7 +61,6 @@ body {
     min-width: 965px;
     padding-top: 19px;
     color: #777;
-    border-top: 1px solid #e5e5e5;
     text-align: right;
 }
 
@@ -72,12 +71,10 @@ body {
     height: 500px;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
-    background-color: rgb(88, 51, 51);
+    background-color: #F8F8F8;
     margin: 0 auto;
     padding: 0;
     position: relative;
-    box-shadow: 0 12px 9px -8px rgb(85, 62, 62);
-    border-radius: 9px;
 }
 
 .jumbotron .btn {
@@ -117,7 +114,7 @@ body {
     transform:rotate(180deg);
     -ms-transform:rotate(180deg); /* IE 9 */
     -webkit-transform:rotate(180deg); /* Safari and Chrome */
-    color: rgb(163, 51, 51);
+    color: rgb(206, 86, 86);
 
     @media (max-width: 420px) {
         font-size: 36px;
@@ -125,12 +122,11 @@ body {
 }
 
 .navigation-bar {
-    height: 50px;
-    border-radius: 6px 6px 0px 0px;   
+    height: 50px;  
     position: absolute;
     left: 0;
     right: 0;
-    background-color: rgb(128, 76, 76);
+    background-color: rgb(206, 86, 86);
 
     ul {
         text-align: left;
@@ -145,13 +141,11 @@ body {
         color: white;
         margin-right: 20px;
         font-family: 'Expletus Sans', cursive;
-        text-transform: uppercase;
     }
 }
 
 .jumbo-footer {
     height: 100px;
-    border-radius: 0px 0px 5px 5px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -173,7 +167,9 @@ body {
 }
 
 #main-search:focus{
-    outline-color: rgb(236, 193, 193);
+outline-color: rgb(109, 197, 221);
+outline-width: 2px;
+outline-style: solid;
 
 }
 
@@ -185,9 +181,10 @@ body {
     height: 28px;
     border-radius: 0px 2px 2px 0px;
     color: rgb(255, 255, 255);
-    background-color: rgb(148, 42, 42);
-    border-color: rgb(148, 42, 42);
-    box-shadow: inset 0px 0px 5px 0px rgb(112, 37, 37);}
+    background-color: #6DC5DD;
+    border-color: #8A8A8A;
+    box-shadow: #8A8A8A;
+}
 
 .submit:hover{
     background-color: rgb(218, 116, 116);
@@ -206,7 +203,7 @@ body {
 /************** HOME VIEW *********************/
 
 .today {
-    color: rgb(255, 255, 255);
+    color: #737373;
     height: 18px;
     line-height: 18px;
     font-size: 18px;
@@ -268,7 +265,7 @@ body {
     height: 0px;
     border-style: solid;
     border-width: 28.5px 15.8px 28.5px 0;
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #6DC5DD transparent transparent;
     margin: 0 auto;
     margin-top: 16px;
 }
@@ -285,7 +282,7 @@ body {
     height: 0px;
     border-style: solid;
     border-width: 28.5px 0 28.5px 15.8px;
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent #6DC5DD;
     margin: 0 auto;
     margin-top: 16px;
 }
