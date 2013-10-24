@@ -142,14 +142,15 @@ body {
         margin-right: 20px;
         margin-left: 12px;
         font-family: 'Expletus Sans', cursive;
-        transition: 0.05s ease;
     }
+
     li:hover{
-        color: rgb(247, 116, 98);
+        color: rgb(231, 65, 42);
         padding: 12px;
         background-color: #F8F8F8;
-        margin: 0 8px 0 0;
+                margin: 0 8px 0 0;
     }
+
     li:active{
         color: rgb(247, 116, 98);
         padding: 12px;
@@ -177,11 +178,11 @@ body {
     width: 300px;
     font-size: 14px;
     line-height: 0;
-
 }
 
+
 #main-search:focus{
-outline-color: rgb(109, 197, 221);
+outline-color: rgb(205, 230, 236);
 outline-width: 2px;
 outline-style: solid;
 
@@ -191,18 +192,28 @@ outline-style: solid;
     display: inline-block;
     position: absolute;
     top: 11px;
-    right: 8px;
+    right: 9px;
     height: 28px;
-    border-radius: 0px 2px 2px 0px;
+    letter-spacing: 1px;
+    line-height: 0px;
+    border-radius: 0px 0px 0px 0px;
     color: rgb(255, 255, 255);
-    background-color: #6DC5DD;
-    border-color: #8A8A8A;
-    box-shadow: #8A8A8A;
+    background-color: rgb(37, 163, 197);
+    border-color: rgb(50, 154, 204);
 }
 
 .submit:hover{
-    background-color: rgb(218, 116, 116);
-    border-color: rgb(228, 115, 115);
+    background-color: rgb(109, 197, 221);
+    border-color: rgb(127, 188, 204);
+}
+
+.submit:focus {
+    background-color: rgb(109, 197, 221);
+    border-color: rgb(127, 188, 204);
+}
+.submit:active {
+    background-color: rgb(109, 197, 221);
+    border-color: rgb(127, 188, 204);
 }
 /*********** CONTENT AREA **************/
 
@@ -307,3 +318,4 @@ outline-style: solid;
     width: 100%;
 
 }
+

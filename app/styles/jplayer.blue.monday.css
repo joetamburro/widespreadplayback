@@ -226,13 +226,13 @@ div.jp-video div.jp-progress {
 	height:10px;
 }
 div.jp-seek-bar {
-	background: url("jplayer.blue.monday.jpg") 0 -202px repeat-x;
+	background-color: #FFFFFF;
 	width:0px;
 	height:100%;
 	cursor: pointer;
 }
 div.jp-play-bar {
-	background: url("jplayer.blue.monday.jpg") 0 -218px repeat-x ;
+	background-color: #6DC5DD;
 	width:0px;
 	height:100%;
 }
@@ -317,7 +317,7 @@ a.jp-volume-max:hover {
 div.jp-volume-bar {
 	position: absolute;
 	overflow:hidden;
-	background: url("jplayer.blue.monday.jpg") 0 -250px repeat-x;
+	background-color: #fff;
 	width:115px;
 	height:5px;
 	cursor: pointer;
@@ -335,7 +335,7 @@ div.jp-video div.jp-volume-bar {
 	left:72px;
 }
 div.jp-volume-bar-value {
-	background: url("jplayer.blue.monday.jpg") 0 -256px repeat-x;
+	background-color: #6DC5DD;
 	width:0px;
 	height:5px;
 }
