@@ -154,12 +154,12 @@ a.jp-pause {
 	height:40px;
 }
 
-a.jp-play {
+/*a.jp-play {
 	background: url("jplayer.blue.monday.jpg") 0 0 no-repeat;
-}
-a.jp-play:hover {
+}*/
+/*a.jp-play:hover {
 	background: url("jplayer.blue.monday.jpg") -41px 0 no-repeat;
-}
+}*/
 a.jp-pause {
 	background: url("jplayer.blue.monday.jpg") 0 -42px no-repeat;
 	display: none;
@@ -207,12 +207,12 @@ div.jp-progress {
 }
 div.jp-audio div.jp-progress {
 	position: absolute;
-	top:32px;
+	top:0px;
 	height:15px;
 }
 div.jp-audio div.jp-type-single div.jp-progress {
-	left: 365px;
-	width:186px;
+	left: 288px;
+	width: 350px;
 }
 div.jp-audio div.jp-type-playlist div.jp-progress {
 	left:166px;
@@ -319,8 +319,8 @@ div.jp-volume-bar {
 	cursor: pointer;
 }
 div.jp-audio div.jp-volume-bar {
-	top:37px;
-	left:330px;
+	top:8px;
+	right: 65px;
 }
 div.jp-audio-stream div.jp-volume-bar {
 	top:37px;
@@ -342,11 +342,11 @@ div.jp-volume-bar-value {
 
 div.jp-audio div.jp-time-holder {
 	position:absolute;
-	top:50px;
+	top:20px;
 }
 div.jp-audio div.jp-type-single div.jp-time-holder {
-	left:110px;
-	width:186px;
+	left: 368px;
+	width: 186px;
 }
 div.jp-audio div.jp-type-playlist div.jp-time-holder {
 	left:166px;
@@ -647,11 +647,33 @@ a.jp-shuffle-off:hover {
 }
 
 div.jp-title {
-  border-radius: 0px 0px 5px 5px;
+
   background-color: rgb(128, 76, 76);
 }
 
 div.jp-gui.jp-interface {
 	   background-color: rgb(128, 76, 76);
+	   border-radius: 0px 0px 6px 6px;
 }
 
+.play {
+	background: url("play_button.png");
+	position: absolute;
+	left: 20px;
+	top: -10px;
+	height: 40px;
+	width: 40px;
+	z-index: 50;
+}
+
+a.jp-volume-max {
+	position: absolute;
+right: 30px;
+top: -10px;
+}
+
+a.jp-mute {
+	position: absolute;
+right: 120px;
+top: -10px;
+}

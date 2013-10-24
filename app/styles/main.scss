@@ -184,8 +184,7 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(148, 42, 42);
     border-color: rgb(148, 42, 42);
-    box-shadow: inset 0px 0px 5px 0px rgb(224, 152, 152);
-}
+    box-shadow: inset 0px 0px 5px 0px rgb(112, 37, 37);}
 
 .submit:hover{
     background-color: rgb(218, 116, 116);
@@ -257,7 +256,7 @@ body {
 
 .left-arrow {
     position: absolute;
-    left: 125px;
+    left: 200px;
     top: 125px;
 }
 
@@ -273,7 +272,7 @@ body {
 
 .right-arrow {
     position: absolute;
-    right: 125px;
+    right: 200px;
     top: 125px;
 }
 
