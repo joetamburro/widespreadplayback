@@ -317,13 +317,13 @@ div.jp-volume-bar {
 	position: absolute;
 	overflow:hidden;
 	background: url("jplayer.blue.monday.jpg") 0 -250px repeat-x;
-	width:46px;
+	width:115px;
 	height:5px;
 	cursor: pointer;
 }
 div.jp-audio div.jp-volume-bar {
 	top:8px;
-	right: 65px;
+	right:77px;
 }
 div.jp-audio-stream div.jp-volume-bar {
 	top:37px;
@@ -348,7 +348,7 @@ div.jp-audio div.jp-time-holder {
 	top:20px;
 }
 div.jp-audio div.jp-type-single div.jp-time-holder {
-	left: 368px;
+	left: 388px;
 	width: 186px;
 	color: rgb(255, 255, 255);
 }
@@ -692,13 +692,19 @@ div.jp-gui.jp-interface {
 }
 
 a.jp-volume-max {
-	position: absolute;
-right: 30px;
+position: absolute;
+right: 50px;
 top: -10px;
 }
 
 a.jp-mute {
 	position: absolute;
-	right: 120px;
+	right: 200px;
+	top: -10px;
+}
+
+a.jp-unmute {
+	position: absolute;
+	right: 200px;
 	top: -10px;
 }
