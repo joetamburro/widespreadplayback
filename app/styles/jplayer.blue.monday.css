@@ -666,12 +666,16 @@ div.jp-gui.jp-interface {
  	height: 0px;
   border-style: solid;
  	border-width: 26.5px 0 26.5px 26.5px;
-  border-color: transparent transparent transparent rgb(93, 208, 240);
+  border-color: transparent transparent transparent rgb(255, 255, 255);
 	position: absolute;
 	left: 125px;
 	top: -18px;
 	transition: 2s ease;
 	transition-property: opacity;
+}
+
+.play:hover {
+	border-color: transparent transparent transparent rgb(37, 163, 197);
 }
 
 .play:focus {
@@ -684,11 +688,16 @@ div.jp-gui.jp-interface {
 	top: -8px;
 	height: 30px;
 	width: 15px;
-	border-left: 4px solid rgb(93, 208, 240);
-	border-right: 4px solid rgb(93, 208, 240);
+	border-left: 4px solid rgb(255, 255, 255);
+	border-right: 4px solid rgb(255, 255, 255);
 	transition: 2s ease;
 	transition-property: opacity;
 }
+
+.pause:hover {
+	border-color: rgb(37, 163, 197);
+}
+
 
 .pause:focus{
 	outline: none;
@@ -699,10 +708,14 @@ div.jp-gui.jp-interface {
  	height: 0px;
   border-style: solid;
   border-width: 16.5px 16.5px 16.5px 0;
-  border-color: transparent rgb(93, 208, 240) transparent transparent;
+  border-color: transparent rgb(255, 255, 255) transparent transparent;
 	position: absolute;
 	left: 65px;
 	top: -15px;
+}
+
+.previous1:hover {
+	border-color: transparent rgb(37, 163, 197) transparent transparent;
 }
 
 .previous1:focus{
@@ -714,10 +727,14 @@ div.jp-gui.jp-interface {
  	height: 0px;
   border-style: solid;
   border-width: 16.5px 16.5px 16.5px 0;
-  border-color: transparent rgb(93, 208, 240) transparent transparent;
+  border-color: transparent rgb(255, 255, 255) transparent transparent;
 	position: absolute;
 	left: 50px;
 	top: -15px;
+}
+
+.previous2:hover {
+	border-color: transparent rgb(37, 163, 197) transparent transparent;
 }
 
 .previous2:focus{
@@ -729,10 +746,14 @@ div.jp-gui.jp-interface {
   height: 0px;
   border-style: solid;
   border-width: 16.5px 0 16.5px 16.5px;
-  border-color: transparent transparent transparent rgb(93, 208, 240);
+  border-color: transparent transparent transparent rgb(255, 255, 255);
 	position: absolute;
 	left: 175px;
 	top: -15px;
+}
+
+.next1:hover {
+	border-color: transparent transparent transparent rgb(37, 163, 197);
 }
 
 .next1:focus{
@@ -744,10 +765,13 @@ div.jp-gui.jp-interface {
   height: 0px;
   border-style: solid;
   border-width: 16.5px 0 16.5px 16.5px;
-  border-color: transparent transparent transparent rgb(93, 208, 240);
+  border-color: transparent transparent transparent rgb(255, 255, 255);
 	position: absolute;
 	left: 190px;
 	top: -15px;
+}
+.next2:hover {
+	border-color: transparent transparent transparent rgb(37, 163, 197);
 }
 
 .next2:focus{
