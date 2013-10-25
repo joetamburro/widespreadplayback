@@ -666,7 +666,7 @@ div.jp-gui.jp-interface {
  	height: 0px;
   border-style: solid;
  	border-width: 26.5px 0 26.5px 26.5px;
-  border-color: transparent transparent transparent rgb(37, 163, 197);
+  border-color: transparent transparent transparent rgb(93, 208, 240);
 	position: absolute;
 	left: 125px;
 	top: -18px;
@@ -684,8 +684,8 @@ div.jp-gui.jp-interface {
 	top: -8px;
 	height: 30px;
 	width: 15px;
-	border-left: 4px solid rgb(37, 163, 197);
-	border-right: 4px solid rgb(37, 163, 197);
+	border-left: 4px solid rgb(93, 208, 240);
+	border-right: 4px solid rgb(93, 208, 240);
 	transition: 2s ease;
 	transition-property: opacity;
 }
@@ -699,7 +699,7 @@ div.jp-gui.jp-interface {
  	height: 0px;
   border-style: solid;
   border-width: 16.5px 16.5px 16.5px 0;
-  border-color: transparent rgb(37, 163, 197) transparent transparent;
+  border-color: transparent rgb(93, 208, 240) transparent transparent;
 	position: absolute;
 	left: 65px;
 	top: -15px;
@@ -714,7 +714,7 @@ div.jp-gui.jp-interface {
  	height: 0px;
   border-style: solid;
   border-width: 16.5px 16.5px 16.5px 0;
-  border-color: transparent rgb(37, 163, 197) transparent transparent;
+  border-color: transparent rgb(93, 208, 240) transparent transparent;
 	position: absolute;
 	left: 50px;
 	top: -15px;
@@ -729,7 +729,7 @@ div.jp-gui.jp-interface {
   height: 0px;
   border-style: solid;
   border-width: 16.5px 0 16.5px 16.5px;
-  border-color: transparent transparent transparent rgb(37, 163, 197);
+  border-color: transparent transparent transparent rgb(93, 208, 240);
 	position: absolute;
 	left: 175px;
 	top: -15px;
@@ -744,7 +744,7 @@ div.jp-gui.jp-interface {
   height: 0px;
   border-style: solid;
   border-width: 16.5px 0 16.5px 16.5px;
-  border-color: transparent transparent transparent rgb(37, 163, 197);
+  border-color: transparent transparent transparent rgb(93, 208, 240);
 	position: absolute;
 	left: 190px;
 	top: -15px;
