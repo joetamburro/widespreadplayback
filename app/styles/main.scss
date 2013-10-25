@@ -268,7 +268,7 @@ outline-style: solid;
     
 
     li {
-        border-top: 1px solid rgb(115, 115, 115);
+        border-top: 1px solid rgb(216, 216, 216);
         padding: 10px;
         font-size: 12px;
     }
@@ -297,6 +297,7 @@ outline-style: solid;
     border-radius: 0px;
     left: -120px;
     top: 10px;
+    transition: .5s ease;
 }
 
 .left-triangle:after {
@@ -310,6 +311,12 @@ outline-style: solid;
     z-index: 1;
     left: -18px;
     top: 0px;
+    transition: .5s ease;
+}
+
+.left-triangle:hover{
+    width: 130px;
+    left: -140px;
 }
 
 .right-arrow {
@@ -331,6 +338,7 @@ outline-style: solid;
     border-radius: 0px;
     right: -120px;
     top: 10px;
+    transition: .5s ease;
 }
 
 .right-triangle:after {
@@ -344,12 +352,18 @@ outline-style: solid;
     z-index: 1;
     right: -18px;
     top: 0px;
+    transition: .5 ease;
 }
 
+.right-triangle:hover {
+    width: 130px;
+    right: -140px;
+}
 
 .set {
     width: 100%;
     margin-bottom: 2px;
+    font-size: 14px;
 }
 
 .title {
