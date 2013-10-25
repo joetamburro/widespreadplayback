@@ -1,8 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
-@import url(http://fonts.googleapis.com/css?family=Expletus+Sans);
-@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import 'sass-bootstrap/lib/bootstrap';
 
 
@@ -68,7 +67,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     min-width: 965px;
-    height: 500px;
+    height: 600px;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
     background-color: #F8F8F8;
@@ -141,7 +140,7 @@ body {
         color: white;
         margin-right: 20px;
         margin-left: 12px;
-        font-family: 'Expletus Sans', cursive;
+        font-family: 'Open Sans', sans-serif;
     }
 
     li:hover{
@@ -241,7 +240,7 @@ outline-style: solid;
     display: inline-block;
     position: relative;
     top: -12px;
-    height: 275px;
+    height: 375px;
     width: 450px;
     overflow: scroll;
     color: rgb(99, 51, 51);
@@ -256,7 +255,7 @@ outline-style: solid;
     padding-top: 8px;
     list-style-position: inside;
     text-align: left;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: -10px;
 
     ol {
@@ -269,9 +268,9 @@ outline-style: solid;
     
 
     li {
-        border-top: 1px solid grey;
+        border-top: 1px solid rgb(115, 115, 115);
         padding: 10px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -283,18 +282,8 @@ outline-style: solid;
 .left-arrow {
     position: absolute;
     left: 200px;
-    top: 125px;
+    top: 185px;
 }
-
-/*.left-triangle {
-    width: 40px;
-    height: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: transparent rgb(37, 163, 197) transparent transparent;
-    margin: 0 auto;
-    margin-top: 16px;
-}*/
 
 .left-triangle {
     position: absolute;
@@ -326,7 +315,7 @@ outline-style: solid;
 .right-arrow {
     position: absolute;
     right: 200px;
-    top: 125px;
+    top: 185px;
 }
 
 
@@ -360,6 +349,11 @@ outline-style: solid;
 
 .set {
     width: 100%;
-
+    margin-bottom: 2px;
 }
 
+.title {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32px;
+}

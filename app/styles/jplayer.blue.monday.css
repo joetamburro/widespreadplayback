@@ -212,8 +212,10 @@ div.jp-audio div.jp-progress {
 	height:15px;
 }
 div.jp-audio div.jp-type-single div.jp-progress {
-	left: 288px;
-	width: 350px;
+	left: 252px;
+	width: 455px;
+	height: 3px;
+	top: 5px;
 }
 div.jp-audio div.jp-type-playlist div.jp-progress {
 	left:166px;
@@ -323,8 +325,9 @@ div.jp-volume-bar {
 	cursor: pointer;
 }
 div.jp-audio div.jp-volume-bar {
-	top:8px;
-	right:77px;
+	top: 4px;
+	height: 4px;
+	right: 77px;
 }
 div.jp-audio-stream div.jp-volume-bar {
 	top:37px;
@@ -781,17 +784,17 @@ div.jp-gui.jp-interface {
 a.jp-volume-max {
 position: absolute;
 right: 50px;
-top: -10px;
+top: -13px;
 }
 
 a.jp-mute {
 	position: absolute;
 	right: 200px;
-	top: -10px;
+	top: -13px;
 }
 
 a.jp-unmute {
 	position: absolute;
 	right: 200px;
-	top: -10px;
+	top: -13px;
 }
