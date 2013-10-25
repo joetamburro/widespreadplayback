@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import 'sass-bootstrap/lib/bootstrap';
 
 
@@ -145,14 +145,16 @@ body {
 
     li:hover{
         color: rgb(0, 140, 179);
-        padding: 12px;
+        padding: 10px;
+        padding-right: 14px;
         background-color: #F8F8F8;
         margin: 0 8px 0 0;
     }
 
     li:active{
         color: rgb(247, 116, 98);
-        padding: 12px;
+        padding: 10px;
+        padding-right: 14px;
         background-color: rgb(248, 248, 248);
         margin-left: 0px;
     }
@@ -197,13 +199,13 @@ outline-style: solid;
     line-height: 0px;
     border-radius: 0px 0px 0px 0px;
     color: rgb(255, 255, 255);
-    background-color: rgb(37, 163, 197);
+    background-color: rgb(1, 149, 189);
     border-color: rgb(50, 154, 204);
 }
 
 .submit:hover{
     background-color: rgb(109, 197, 221);
-    border-color: rgb(127, 188, 204);
+    border-color: rgb(105, 158, 182);
 }
 
 .submit:focus {
@@ -272,8 +274,13 @@ outline-style: solid;
         padding: 10px;
         font-size: 12px;
     }
+
 }
 
+#home-setlist li:hover{
+    font-weight: bold;
+    font-size: 13px;
+}
 #home-year {
     position: relative;
     top: -10px;
