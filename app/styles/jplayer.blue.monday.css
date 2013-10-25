@@ -150,23 +150,23 @@ div.jp-interface ul.jp-controls a {
 }
 a.jp-play,
 a.jp-pause {
-	width:40px;
-	height:40px;
+	/*width:40px;*/
+	/*height:40px;*/
 }
 
 a.jp-play {
-	background: url("play_button.png") 0 0 no-repeat;
+	/*background: url("play_button.png") 0 0 no-repeat;*/
 	background-size: 39px;
 }
 /*a.jp-play:hover {
 	background: url("jplayer.blue.monday.jpg") -41px 0 no-repeat;
 }*/
 a.jp-pause {
-	background: url("jplayer.blue.monday.jpg") 0 -42px no-repeat;
+	/*background: url("jplayer.blue.monday.jpg") 0 -42px no-repeat;*/
 	display: none;
 }
 a.jp-pause:hover {
-	background: url("jplayer.blue.monday.jpg") -41px -42px no-repeat;
+	/*background: url("jplayer.blue.monday.jpg") -41px -42px no-repeat;*/
 }
 
 a.jp-stop, a.jp-previous, a.jp-next {
@@ -185,17 +185,17 @@ a.jp-stop:hover {
 }
 
 a.jp-previous {
-	background: url("jplayer.blue.monday.jpg") 0 -112px no-repeat;
+	/*background: url("jplayer.blue.monday.jpg") 0 -112px no-repeat;*/
 }
 a.jp-previous:hover {
-	background: url("jplayer.blue.monday.jpg") -29px -112px no-repeat;
+	/*background: url("jplayer.blue.monday.jpg") -29px -112px no-repeat;*/
 }
 
 a.jp-next {
-	background: url("jplayer.blue.monday.jpg") 0 -141px no-repeat;
+	/*background: url("jplayer.blue.monday.jpg") 0 -141px no-repeat;*/
 }
 a.jp-next:hover {
-	background: url("jplayer.blue.monday.jpg") -29px -141px no-repeat;
+	/*background: url("jplayer.blue.monday.jpg") -29px -141px no-repeat;*/
 }
 
 /* @end */
@@ -662,33 +662,96 @@ div.jp-gui.jp-interface {
 }
 
 .play {
-	background: url("play_button.png");
+	width: 0px;
+ 	height: 0px;
+  border-style: solid;
+ 	border-width: 26.5px 0 26.5px 26.5px;
+  border-color: transparent transparent transparent rgb(37, 163, 197);
 	position: absolute;
 	left: 125px;
-	top: -15px;
-	height: 40px;
-	width: 40px;
-	border: 1px solid white;
+	top: -18px;
+	transition: 2s ease;
+	transition-property: opacity;
+}
+
+.play:focus {
+	outline: none;
 }
 
 .pause {
-		position: absolute;
-	left: 125px;
-	top: -15px;
-	height: 40px;
-	width: 40px;
-}
-
-.previous {
 	position: absolute;
-	left: 70px;
+	left: 127px;
+	top: -8px;
+	height: 30px;
+	width: 15px;
+	border-left: 4px solid rgb(37, 163, 197);
+	border-right: 4px solid rgb(37, 163, 197);
+	transition: 2s ease;
+	transition-property: opacity;
+}
+
+.pause:focus{
+	outline: none;
+}
+
+.previous1 {
+	width: 0px;
+ 	height: 0px;
+  border-style: solid;
+  border-width: 16.5px 16.5px 16.5px 0;
+  border-color: transparent rgb(37, 163, 197) transparent transparent;
+	position: absolute;
+	left: 65px;
 	top: -15px;
 }
 
-.next {
+.previous1:focus{
+	outline: none;
+}
+
+.previous2 {
+	width: 0px;
+ 	height: 0px;
+  border-style: solid;
+  border-width: 16.5px 16.5px 16.5px 0;
+  border-color: transparent rgb(37, 163, 197) transparent transparent;
+	position: absolute;
+	left: 50px;
+	top: -15px;
+}
+
+.previous2:focus{
+	outline: none;
+}
+
+.next1 {
+	width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 16.5px 0 16.5px 16.5px;
+  border-color: transparent transparent transparent rgb(37, 163, 197);
+	position: absolute;
+	left: 175px;
+	top: -15px;
+}
+
+.next1:focus{
+	outline: none;
+}
+
+.next2 {
+	width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 16.5px 0 16.5px 16.5px;
+  border-color: transparent transparent transparent rgb(37, 163, 197);
 	position: absolute;
 	left: 190px;
 	top: -15px;
+}
+
+.next2:focus{
+	outline: none;
 }
 
 a.jp-volume-max {

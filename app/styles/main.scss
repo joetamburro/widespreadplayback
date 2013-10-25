@@ -148,7 +148,7 @@ body {
         color: rgb(231, 65, 42);
         padding: 12px;
         background-color: #F8F8F8;
-                margin: 0 8px 0 0;
+        margin: 0 8px 0 0;
     }
 
     li:active{
@@ -157,6 +157,7 @@ body {
         background-color: rgb(248, 248, 248);
         margin-left: 0px;
     }
+
 }
 
 .jumbo-footer {
@@ -291,7 +292,7 @@ outline-style: solid;
     height: 0px;
     border-style: solid;
     border-width: 28.5px 15.8px 28.5px 0;
-    border-color: transparent #737373 transparent transparent;
+    border-color: transparent rgb(37, 163, 197) transparent transparent;
     margin: 0 auto;
     margin-top: 16px;
 }
@@ -308,7 +309,7 @@ outline-style: solid;
     height: 0px;
     border-style: solid;
     border-width: 28.5px 0 28.5px 15.8px;
-    border-color: transparent transparent transparent #737373;
+    border-color: transparent transparent transparent rgb(37, 163, 197);
     margin: 0 auto;
     margin-top: 16px;
 }

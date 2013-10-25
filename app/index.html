@@ -38,10 +38,10 @@
                 <div class="navigation-bar">
 
                     <ul>
-                        <a href="#/home"><li id="home">Home</li></a>
-                        <a href="#"><li id="date">Date</li></a>
-                        <a href="#"><li id="location">Location</li></a>
-                        <a href="#/currently-playing"><li id="currently-playing">Currently Playing</li></a>
+                        <a href="#/home"><li class="nav">Home</li></a>
+                        <a href="#"><li class="nav">Date</li></a>
+                        <a href="#"><li class="nav">Location</li></a>
+                        <a href="#/currently-playing"><li class="nav">Currently Playing</li></a>
                     </ul>
 
                     <input id="main-search" type="search">
@@ -72,9 +72,15 @@
                         <div class="jp-gui jp-interface">
                           
                           <ul class="jp-controls">
-                            <li><a href="javascript:;" class="jp-previous previous" tabindex="1">previous</a></li>
+                            <li>
+                                <a href="javascript:;" class="jp-previous previous1" tabindex="1">previous</a>
+                                <a href="javascript:;" class="jp-previous previous2" tabindex="1">previous</a>
+                            </li>
                             <li><a href="javascript:;" class="jp-play play" tabindex="1">play</a></li>
-                            <li><a href="javascript:;" class="jp-next next" tabindex="1">play</a></li>
+                            <li>
+                                <a href="javascript:;" class="jp-next next1" tabindex="1">play</a>
+                                <a href="javascript:;" class="jp-next next2" tabindex="1">play</a>
+                            </li>
                             <li><a href="javascript:;" class="jp-pause pause" tabindex="1">pause</a></li>
                            <!--  <li><a href="javascript:;" class="jp-stop stop" tabindex="1">stop</a></li> -->
                             <li><a href="javascript:;" class="jp-mute mute" tabindex="1" title="mute">mute</a></li>
@@ -258,6 +264,7 @@
         <script src="scripts/models.js"></script>
         <script src="scripts/collections.js"></script>
         <script src="scripts/routers.js"></script>
+        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
