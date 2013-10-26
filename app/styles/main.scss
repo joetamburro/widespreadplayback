@@ -281,6 +281,7 @@ outline-style: solid;
 #home-setlist li:hover{
     font-weight: bold;
     font-size: 13px;
+    cursor: pointer;
 }
 #home-year {
     position: relative;
@@ -326,6 +327,7 @@ outline-style: solid;
 .left-triangle:hover{
     width: 130px;
     left: -140px;
+    cursor: pointer;
 }
 
 .right-arrow {
@@ -368,6 +370,7 @@ outline-style: solid;
 .right-triangle:hover {
     width: 130px;
     right: -140px;
+    cursor: pointer;
 }
 
 .set {
