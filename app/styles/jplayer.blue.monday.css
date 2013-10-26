@@ -244,7 +244,7 @@ div.jp-seek-bar {
 	cursor: pointer;
 }
 div.jp-play-bar {
-	background-color: rgb(38, 162, 201);
+	background-color: rgb(180, 33, 39);
 	width:0px;
 	height:100%;
 }
@@ -308,7 +308,7 @@ a.jp-mute {
 	background-size: 17px;
 }
 a.jp-mute:hover {
-	background: url("");
+	/*background: url("");*/
 	background-size: 17px;
 }
 a.jp-unmute {
@@ -348,7 +348,7 @@ div.jp-video div.jp-volume-bar {
 	left:72px;
 }
 div.jp-volume-bar-value {
-	background-color: rgb(38, 162, 201);
+	background-color: rgb(180, 33, 39);
 	width:0px;
 	height:5px;
 }
@@ -691,7 +691,7 @@ div.jp-gui.jp-interface {
 }
 
 .play:hover {
-	border-color: transparent transparent transparent rgb(37, 163, 197);
+	border-color: transparent transparent transparent rgb(180, 33, 39);
 }
 
 .play:focus {
