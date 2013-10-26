@@ -327,8 +327,8 @@ div.jp-volume-bar {
 	cursor: pointer;
 }
 div.jp-audio div.jp-volume-bar {
-	top: 4px;
-	height: 4px;
+	top: 5px;
+	height: 3px;
 	right: 77px;
 }
 div.jp-audio-stream div.jp-volume-bar {

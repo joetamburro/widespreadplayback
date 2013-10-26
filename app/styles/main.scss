@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 @import 'sass-bootstrap/lib/bootstrap';
 
 
@@ -273,6 +273,7 @@ outline-style: solid;
         border-top: 1px solid rgb(216, 216, 216);
         padding: 10px;
         font-size: 12px;
+        font-weight: 400;
     }
 
 }
@@ -298,6 +299,7 @@ outline-style: solid;
     height: 35px;
     padding: 0px;
     font-size: 12px;
+    letter-spacing: 1px;
     line-height: 34px;
     color: rgb(255, 255, 255);
     background: rgb(37, 163, 197);
@@ -339,6 +341,7 @@ outline-style: solid;
     height: 35px;
     padding: 0px;
     font-size: 12px;
+    letter-spacing: 1px;
     line-height: 34px;
     color: rgb(255, 255, 255);
     background: rgb(37, 163, 197);
@@ -370,7 +373,8 @@ outline-style: solid;
 .set {
     width: 100%;
     margin-bottom: 2px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .title {
