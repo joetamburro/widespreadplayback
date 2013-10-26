@@ -128,13 +128,33 @@
             </div>
 
         </div>
-
         <script type="text/template" id="home-view-template">
-            <div class="today">Today in WSP History</div>
+               
+              <a data-toggle="modal" href="#myModal" class="btn btn-lg stats-button">Stats for 1996</a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">1996</h4>
+                    </div>
+                    <div class="modal-body">
+                      wooooo stats!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
                     
+            <div class="today">Today in WSP History</div>
             <div class="home-combo">
                 <select id="home-year">
-                    <option value="1996">1996</option>
+                    <option value="1996" selected>Select Year</option>
+                    <option value="1996" ></option>
                 </select>   
             </div>
                   
@@ -142,38 +162,7 @@
                 <a href="#"><div class="left-triangle">1995</div></a>
             </div>
                     
-            <div class="setlist-scroll">
-               <ol id="home-setlist">
-                    <li>hi</li>
-               </ol>
-            </div>
 
-             <div class="right-arrow">  
-                <div class="right-triangle">1997
-                </div>
-            </div>
-
-
-        </script>
-
-        <script type="text/template" id="currently-playing-template">
-
-            <div class="today">May 5, 2010</div>
-                    
-            <div class="home-combo">
-                <select id="home-year">
-                    <option value="1996"></option>
-                </select>   
-            </div>
-            <div class="left-arrow">  
-                <div class="outer-box-left">
-                    <div class="inner-box-left">
-                        <div class="left-triangle">Previous Show
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    
             <div class="setlist-scroll">
                <ol id="home-setlist">
                     <ol id="set-one">
@@ -211,10 +200,72 @@
             </div>
 
              <div class="right-arrow">  
+                <div class="right-triangle">1997
+                </div>
+            </div>
+
+
+        </script>
+
+        <script type="text/template" id="currently-playing-template">
+
+            <div class="today">May 5, 2010</div>
+                    
+            <div class="home-combo">
+                <select id="current-year">
+                    <option value="1996"></option>
+                </select>   
+            </div>
+            <div class="left-arrow">  
                 <div class="outer-box-left">
                     <div class="inner-box-left">
-                        <a href="#"><div class="right-triangle">Next Show
-                        </div></a>
+                        <div class="left-triangle">Previous Show
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setlist-scroll">
+               <ol id="current-setlist">
+                    <ol id="set-one">
+                        <div class="set">First Set</div>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                    </ol>
+                    <br>
+                    <ol id="set-two">                   
+                        <div class="set">Second Set</div>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                    </ol>
+                    <br>
+                    <ol id="encore">
+                        <div class="set">Encore</div>
+                        <li>Hi, I am a song</li>
+                        <li>Hi, I am a song</li>
+                    </ol>
+               </ol>
+            </div>
+
+             <div class="right-arrow">  
+                <div class="outer-box-left">
+                    <div class="inner-box-left">
+                        <div class="right-triangle">Next Show
+                        </div>
                     </div>
                 </div>
             </div>

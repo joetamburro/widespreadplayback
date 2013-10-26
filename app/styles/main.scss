@@ -229,10 +229,13 @@ outline-style: solid;
 /************** HOME VIEW *********************/
 
 .today {
-    color: #737373;
-    height: 18px;
-    line-height: 18px;
-    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    color: rgb(115, 115, 115);
+    height: 14px;
+    line-height: 14px;
+    font-size: 16px;
     font-family: 'Quantico', sans-serif;
     text-transform: uppercase;
 }
@@ -241,9 +244,9 @@ outline-style: solid;
 .setlist-scroll {
     display: inline-block;
     position: relative;
-    top: -12px;
+    top: -42px;
     height: 375px;
-    width: 450px;
+    width: 500px;
     overflow: scroll;
     color: rgb(99, 51, 51);
     text-align: left;
@@ -278,6 +281,27 @@ outline-style: solid;
 
 }
 
+.stats-box {
+    border: 1px solid black;
+    height: 60px;
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+#year-stat {
+    color: rgb(115, 115, 115);
+    height: 14px;
+    line-height: 14px;
+    font-size: 16px;
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    top: -18px;
+}
+
 #home-setlist li:hover{
     font-weight: bold;
     font-size: 13px;
@@ -285,8 +309,55 @@ outline-style: solid;
 }
 #home-year {
     position: relative;
+    top: -60px;
+    left: -262px;
+}
+
+/************* Currently Playing View ***********************************/
+
+#current-setlist {
+    padding-left: 0px;
+    padding-top: 8px;
+    list-style-position: inside;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -10px;
+
+    ol {
+        color: rgb(115, 115, 115);
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding-left: 0px;
+        }
+    
+
+    li {
+        border-top: 1px solid rgb(216, 216, 216);
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+
+#current-setlist li:hover{
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+#current-year {
+    position: relative;
     top: -10px;
 }
+
+.set {
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+/********* Arrows **********************************************/
 
 .left-arrow {
     position: absolute;
@@ -350,7 +421,7 @@ outline-style: solid;
     border-radius: 0px;
     right: -120px;
     top: 10px;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .right-triangle:after {
@@ -364,7 +435,7 @@ outline-style: solid;
     z-index: 1;
     right: -18px;
     top: 0px;
-    transition: .5 ease;
+    transition: .3 ease;
 }
 
 .right-triangle:hover {
@@ -373,15 +444,40 @@ outline-style: solid;
     cursor: pointer;
 }
 
-.set {
-    width: 100%;
-    margin-bottom: 2px;
-    font-size: 13px;
-    font-weight: 600;
-}
+
+
 
 .title {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     line-height: 32px;
+}
+
+/*********** Stats Button *************************************************/
+
+.stats-button {
+    position: absolute;
+    right: 386px;
+    top: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    height: 36px;
+    width: 178px;
+    line-height: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 163, 197);
+    border-color: rgb(81, 166, 189);
+    -webkit-transition: .5s ease;
+    z-index: 1;
+    transition: .2s ease;
+}
+
+.stats-button:hover {
+    font-weight: 400;
+    width: 140px;
+    right: 406px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 163, 197);
+    border-color: rgb(81, 166, 189);
 }
