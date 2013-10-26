@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
-@import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,700|Quantico);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,100,700|Quantico);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600);
 @import 'sass-bootstrap/lib/bootstrap';
 
 
@@ -341,6 +341,30 @@ outline-style: solid;
 
 }
 
+#current-locale {
+    position: absolute;
+    width: 200px;
+    top: 18px;
+    left: -50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    text-transform: none;
+}
+
+#current-venue {
+    position: absolute;
+    width: 200px;
+    top: 36px;
+    left: -50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    text-transform: none;
+    z-index: 2;
+}
 #current-setlist li:hover{
     font-weight: bold;
     font-size: 13px;
@@ -349,6 +373,18 @@ outline-style: solid;
 #current-year {
     position: relative;
     top: -10px;
+}
+
+.current-location {
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
+}
+
+.current-venue {
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
 }
 
 .set {

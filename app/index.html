@@ -39,8 +39,8 @@
 
                     <ul>
                         <a href="#/home"><li class="nav">Home</li></a>
-                        <a href="#"><li class="nav">Date</li></a>
-                        <a href="#"><li class="nav">Location</li></a>
+                        <li class="nav">Date</li>
+                        <li class="nav">Location</li>
                         <a href="#/currently-playing"><li class="nav">Currently Playing</li></a>
                     </ul>
 
@@ -209,7 +209,10 @@
 
         <script type="text/template" id="currently-playing-template">
 
-            <div class="today">May 5, 2010</div>
+            <div class="today">May 5, 2010
+            <span id="current-locale">Greenville, SC</span>
+            <span id="current-venue">Bi-Lo Center</span>
+            </div>
                     
             <div class="home-combo">
                 <select id="current-year">
