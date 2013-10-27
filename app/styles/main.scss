@@ -204,8 +204,8 @@ body {
 }
 
 .submit:hover{
-    background-color: rgb(37, 163, 197);
-    border-color: rgb(105, 158, 182)
+    background-color: rgb(7, 156, 195);
+    border-color: rgb(105, 158, 182);
 }
 
 .submit:focus {
@@ -310,7 +310,7 @@ body {
 #home-year {
     position: relative;
     top: -60px;
-    left: -262px;
+    left: 175px;
 }
 
 /************* Currently Playing View ***********************************/
@@ -511,7 +511,6 @@ body {
 }
 
 .stats-button:hover {
-    font-weight: 400;
     width: 140px;
     right: 406px;
     color: rgb(255, 255, 255);
