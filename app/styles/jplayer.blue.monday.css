@@ -318,16 +318,23 @@ a.jp-mute {
 	background: url("speaker_silent_32.png");
 	background-size: 17px;
 }
+a.jp-mute:focus {
+	outline: none;
+}
 a.jp-mute:hover {
-	/*background: url("");*/
+	background: url("speaker_silent_32_hover.png");
 	background-size: 17px;
 }
 a.jp-unmute {
 	background: url("speaker_off_32.png");
 	background-size: 18px;
 }
+a.jp-unmute:focus {
+	outline: none;
+}
 a.jp-unmute:hover {
-	/*background: url("jplayer.blue.monday.jpg") -79px -170px no-repeat;*/
+	background: url("speaker_off_32_hover.png");
+	background-size: 18px;
 }
 a.jp-volume-max {
 	background: url("speaker_louder_32.png");
@@ -337,7 +344,9 @@ a.jp-volume-max:hover {
 	background: url("speaker_louder_32_hover.png");
 	background-size: 18px;
 }
-
+a.jp-volume-max:focus {
+	outline: none;
+}
 div.jp-volume-bar {
 	position: absolute;
 	overflow:hidden;
