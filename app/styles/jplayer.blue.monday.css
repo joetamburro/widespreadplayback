@@ -619,12 +619,12 @@ a.jp-restore-screen:hover {
 }
 
 a.jp-repeat {
-	background: url("arrow_circle_left.png");
+	background: url("media-repeat.png");
 	background-size: 16px;
 }
 
 a.jp-repeat:hover {
-	background: url("arrow_circle_left-hover.png");
+	background: url("media-repeat-hover.png");
 	background-size: 16px;
 
 }
