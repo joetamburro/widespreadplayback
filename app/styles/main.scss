@@ -501,12 +501,13 @@ body {
     width: 178px;
     line-height: 12px;
     text-align: center;
+    border-radius: 0;
     color: rgb(255, 255, 255);
     background-color: rgb(37, 163, 197);
     border-color: rgb(81, 166, 189);
     -webkit-transition: .5s ease;
     z-index: 1;
-    transition: .2s ease;
+    transition: .4s ease;
 }
 
 .stats-button:hover {
@@ -514,6 +515,7 @@ body {
     width: 140px;
     right: 406px;
     color: rgb(255, 255, 255);
+    border-radius: 0;
     background-color: rgb(37, 163, 197);
     border-color: rgb(81, 166, 189);
 }

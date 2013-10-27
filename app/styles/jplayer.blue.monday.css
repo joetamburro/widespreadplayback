@@ -187,25 +187,36 @@ a.jp-stop:hover {
 }
 
 a.jp-previous {
-	background: url("video_previous.png");
+	background: url("media-previous.png");
 	background-size: 28px;
 	position: absolute;
 	left: 40px;
-	top: -10px;
+	top: -15px;
 }
 a.jp-previous:hover {
-	/*background: url("jplayer.blue.monday.jpg") -29px -112px no-repeat;*/
+	background: url("media-previous-hover.png");
+	background-size: 28px;
+}
+
+a.jp-previous:focus {
+	outline: none;
 }
 
 a.jp-next {
-	background: url("video_next.png");
+	background: url("media-next.png");
 	background-size: 28px;
 	position: absolute;
 	left: 180px;
-	top: -10px;
+	top: -15px;
 }
 a.jp-next:hover {
-	/*background: url("jplayer.blue.monday.jpg") -29px -141px no-repeat;*/
+	background: url("media-next-hover.png");
+	background-size: 28px;
+	top: -15px;
+}
+
+a.jp-next:focus {
+	outline: none;
 }
 
 /* @end */
@@ -323,7 +334,8 @@ a.jp-volume-max {
 	background-size: 18px;
 }
 a.jp-volume-max:hover {
-	/*background: url("jplayer.blue.monday.jpg") -19px -186px no-repeat;*/
+	background: url("speaker_louder_32_hover.png");
+	background-size: 18px;
 }
 
 div.jp-volume-bar {
@@ -679,11 +691,11 @@ div.jp-gui.jp-interface {
 	width: 0px;
 	height: 0px;
 	border-style: solid;
-	border-width: 26px 0 26px 26px;
+	border-width: 22px 0 22px 22px;
 	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(255, 255, 255);
 	position: absolute;
 	left: 116px;
-	top: -16px;
+	top: -15px;
 	-webkit-transition: 2s ease;
 	transition: 2s ease;
 	-webkit-transition-property: opacity;
@@ -701,7 +713,7 @@ div.jp-gui.jp-interface {
 .pause {
 	position: absolute;
 	left: 116px;
-	top: -5px;
+	top: -7px;
 	height: 30px;
 	width: 15px;
 	border-left: 4px solid rgb(255, 255, 255);
@@ -711,7 +723,7 @@ div.jp-gui.jp-interface {
 }
 
 .pause:hover {
-	border-color: rgb(37, 163, 197);
+	border-color: rgb(180, 33, 39);
 }
 
 
