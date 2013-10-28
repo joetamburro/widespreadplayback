@@ -1,6 +1,6 @@
 console.log('hello collection script')
 
-ShowsCollection = Backbone.Collection.extend ({
+ShowsCollection = Parse.Collection.extend ({
 
   model: Show,
 
