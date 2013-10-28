@@ -232,6 +232,7 @@ body {
     display: inline-block;
     position: relative;
     top: -15px;
+    right: -6px;
     color: rgb(115, 115, 115);
     height: 14px;
     line-height: 14px;
@@ -493,7 +494,7 @@ body {
 
 .stats-button {
     position: absolute;
-    right: 386px;
+    right: 380px;
     top: 20px;
     font-size: 14px;
     font-weight: 200;
@@ -512,7 +513,7 @@ body {
 
 .stats-button:hover {
     width: 140px;
-    right: 406px;
+    right: 400px;
     color: rgb(255, 255, 255);
     border-radius: 0;
     background-color: rgb(37, 163, 197);
