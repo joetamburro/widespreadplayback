@@ -5,7 +5,7 @@ HomeView = Backbone.View.extend({
   template: _.template( $('#home-view-template').text() ),
 
   events: {
-    "click .selection" : "currentSelection",
+    "click #home-setlist li" : "currentSelection",
   },
 
   initialize: function(){
@@ -37,12 +37,13 @@ HomeView = Backbone.View.extend({
       success: function(results) {
         _.each(results, function(result){
           
-          $("#home-setlist").append('<li class="selection" data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          $("#home-setlist").append('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
 
           $("#home-setlist li").click(function(){
+
               var url = $(this).attr('data')
               var title = $(this).text()
-              // console.log($(this).text())
+
               $(".jp-title ul li").text(title)
               $("#jquery_jplayer_1").jPlayer("destroy")
             $("#jquery_jplayer_1").jPlayer({
@@ -62,8 +63,9 @@ HomeView = Backbone.View.extend({
     })
   },
 
-  currentSelection: function (){
-
+  currentSelection: function (event){
+    $('#home-setlist li').removeClass('active')
+    $(event.currentTarget).addClass('active')
   },
 
   currentlyPlaying: function (){
@@ -77,6 +79,9 @@ CurrentlyPlayingView = Backbone.View.extend({
 
   template: _.template( $('#currently-playing-template').text() ),
 
+  events: {
+    "click #current-setlist li" : "currentSelection",
+  },
 
   initialize: function(){
     $('.content-area').append(this.el)
@@ -117,6 +122,11 @@ CurrentlyPlayingView = Backbone.View.extend({
 
       }
     })
+  },
+
+  currentSelection: function (event){
+    $('#current-setlist li').removeClass('active')
+    $(event.currentTarget).addClass('active')
   },
 
 })

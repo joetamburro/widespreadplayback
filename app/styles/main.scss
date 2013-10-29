@@ -321,6 +321,7 @@ body {
     font-size: 13px;
     cursor: pointer;
 }
+
 #home-year {
     position: relative;
     top: -60px;
@@ -531,4 +532,9 @@ body {
     border-radius: 0;
     background-color: rgb(37, 163, 197);
     border-color: rgb(81, 166, 189);
+}
+
+.active {
+    font-weight: bold !important;
+    font-size: 13px !important;
 }
