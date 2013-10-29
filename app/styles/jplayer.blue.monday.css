@@ -629,13 +629,15 @@ a.jp-repeat:hover {
 
 }
 
-/*a.jp-repeat-off {
-	background: url("jplayer.blue.monday.jpg") -60px -290px no-repeat;
+a.jp-repeat-off {
+	background: url("media-repeat-hover.png");
+	background-size: 16px;
 }
 
 a.jp-repeat-off:hover {
-	background: url("jplayer.blue.monday.jpg") -90px -290px no-repeat;
-}*/
+	background: url("media-repeat.png");
+	background-size: 16px;
+}
 
 a.jp-shuffle {
 	background: url("jplayer.blue.monday.jpg") 0 -270px no-repeat;
@@ -760,6 +762,11 @@ a.jp-unmute {
 }
 
 .repeat {
+	height: 16px;
+	width: 16px;
+}
+
+.jp-repeat-off {
 	height: 16px;
 	width: 16px;
 }
