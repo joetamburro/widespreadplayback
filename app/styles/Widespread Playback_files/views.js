@@ -20,18 +20,7 @@ HomeView = Backbone.View.extend({
     var HomeSongs = Parse.Object.extend("Songs")
     var datequery = new Parse.Query(HomeSongs)
 
-    Date.prototype.formattedDate = function() {        
-                                                                       
-            var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based        
-            var dd  = this.getDate().toString();            
-                                
-            return (mm[1]?mm:"0"+mm[0]) + (dd[1]?dd:"0"+dd[0]);
-      };  
-    
-    var d = new Date ();
-    var currentDate = d.formattedDate()
-
-    datequery.startsWith("month_day", currentDate)
+    datequery.startsWith("month_day", "0505")
     datequery.find({
       success: function(results) {
         _.each(results, function(result){
@@ -116,14 +105,3 @@ CurrentlyPlayingView = Backbone.View.extend({
 
 })
 
-Date.prototype.formattedDate = function() {        
-                                
-        var yyyy = this.getFullYear().toString();                                    
-        var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based        
-        var dd  = this.getDate().toString();            
-                            
-        return yyyy + (mm[1]?mm:"0"+mm[0]) + (dd[1]?dd:"0"+dd[0]);
-  };  
-
-var d = new Date ();
-var currentDate = d.formattedDate()
