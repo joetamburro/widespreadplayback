@@ -3,7 +3,7 @@ console.log('hello router script')
 AppRouter = Backbone.Router.extend ({
 
   initialize: function(){
-    new HomeView()
+    
   },
 
   routes: {

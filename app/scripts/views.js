@@ -5,10 +5,11 @@ HomeView = Backbone.View.extend({
   template: _.template( $('#home-view-template').text() ),
 
   events: {
-    // "click  #currently-playing" : "currentlyPlaying",
+    "click .selection" : "currentSelection",
   },
 
   initialize: function(){
+    $('#home-setlist').html('')
     $('.content-area').append(this.el)
     this.render()
     console.log('rendered home view')
@@ -36,7 +37,7 @@ HomeView = Backbone.View.extend({
       success: function(results) {
         _.each(results, function(result){
           
-          $("#home-setlist").append('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          $("#home-setlist").append('<li class="selection" data="'+ result.get('url') +'">'+result.get('title')+'</li>')
 
           $("#home-setlist li").click(function(){
               var url = $(this).attr('data')
@@ -59,6 +60,10 @@ HomeView = Backbone.View.extend({
 
       }
     })
+  },
+
+  currentSelection: function (){
+
   },
 
   currentlyPlaying: function (){
