@@ -40,7 +40,7 @@ CurrentlyPlayingView = Backbone.View.extend({
     var Songs = Parse.Object.extend("Songs")
     var query = new Parse.Query(Songs)
 
-    query.equalTo("show_id", "20001107")
+    query.equalTo("show_id", "20001114")
     query.find({
       success: function(results) {
         _.each(results, function(result){
