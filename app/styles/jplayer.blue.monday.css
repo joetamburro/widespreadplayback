@@ -696,6 +696,7 @@ div.jp-title {
 
 div.jp-gui.jp-interface {
 	   background-color: rgb(206, 86, 86);
+	   border-radius: 0px 0px 4px 4px;
 }
 
 .play {

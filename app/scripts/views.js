@@ -10,6 +10,7 @@ HomeView = Backbone.View.extend({
 
   initialize: function(){
     $('#home-setlist').html('')
+    this.homeNav()
     $('.content-area').append(this.el)
     this.render()
     console.log('rendered home view')
@@ -63,9 +64,12 @@ HomeView = Backbone.View.extend({
     })
   },
 
+  homeNav: function(){
+    $('nav li').addClass('nav-active')
+  },
+
   currentSelection: function (event){
-    $('#home-setlist li').removeClass('active')
-    $(event.currentTarget).addClass('active')
+    
   },
 
   currentlyPlaying: function (){
@@ -94,7 +98,7 @@ CurrentlyPlayingView = Backbone.View.extend({
     var query = new Parse.Query(Songs)
     // var ShowId = new Parse.Object
 
-    query.equalTo("show_id", "20001110")
+    query.equalTo("show_id", "20121230")
     query.find({
       success: function(results) {
         _.each(results, function(result){

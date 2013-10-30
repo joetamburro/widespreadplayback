@@ -136,6 +136,7 @@ body {
 .navigation-bar {
     height: 50px;  
     position: absolute;
+    border-radius: 4px 4px 0px 0px;
     left: 0;
     right: 0;
     background-color: rgb(206, 86, 86);
@@ -172,6 +173,14 @@ body {
         margin-left: 0px;
     }
 
+}
+
+.navigation-bar.nav-active {
+        color: rgb(0, 140, 179);
+        padding: 10px;
+        padding-right: 14px;
+        background-color: #F8F8F8;
+        margin: 0 8px 0 0;
 }
 
 .jumbo-footer {
@@ -314,6 +323,10 @@ body {
     display: inline-block;
     position: relative;
     top: -18px;
+}
+
+.home-combo {
+    height: 42px;
 }
 
 #home-setlist li:hover{
