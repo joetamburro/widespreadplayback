@@ -1,5 +1,7 @@
 console.log('hello router script')
 
+
+
 AppRouter = Backbone.Router.extend ({
 
   initialize: function(){
@@ -27,6 +29,11 @@ AppRouter = Backbone.Router.extend ({
 
 
 })
+
+// function navTab (event){
+//     $('.navigation-bar li').removeClass('current-tab')
+//     $(event.currentTarget).addClass('current-tab')
+// }
 
 var router = new AppRouter()
 Backbone.history.start()

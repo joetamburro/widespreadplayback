@@ -6,6 +6,7 @@ HomeView = Backbone.View.extend({
 // setting click events
   events: {
     "click #home-setlist li" : "currentSelection",
+    "click .navigation-bar li": "highlightTab"
   },
 // when homeview is initialized clear out the setlist
   initialize: function(){
@@ -30,9 +31,9 @@ HomeView = Backbone.View.extend({
       };  
     
     var d = new Date ();
-    var currentDate = d.formattedDate()
+    window.currentDate = d.formattedDate()
 
-    datequery.startsWith("month_day", currentDate)
+    datequery.startsWith("month_day", window.currentDate)
     datequery.find({
       success: function(results) {
 
@@ -67,9 +68,25 @@ HomeView = Backbone.View.extend({
     })
   },
 
+  // search: function(){
+  //   var SearchSongs = new Parse.Object.extend("Songs")
+  //   var searchquery = new Parse.Query.(SearchSongs)
+
+  //   searchquery.find({
+
+
+  //   })
+  
+
   currentSelection: function (event){
-    $('#current-setlist li').removeClass('active')
+    $('#home-setlist li').removeClass('active')
     $(event.currentTarget).addClass('active')
+  },
+
+  highlightTab: function (event){
+    $('.navigation-bar li').first().removeClass('current-tab')
+    $('.navigation-bar li').removeClass('current-tab')
+    $(event.currentTarget).addClass('current-tab')
   },
 
   currentlyPlaying: function (){
@@ -85,6 +102,7 @@ CurrentlyPlayingView = Backbone.View.extend({
 
   events: {
     "click #current-setlist li" : "currentSelection",
+    "click .left-triangle"      : "previousShow"
   },
 
   initialize: function(){
@@ -135,6 +153,12 @@ CurrentlyPlayingView = Backbone.View.extend({
     $('#current-setlist li').removeClass('active')
     $(event.currentTarget).addClass('active')
   },
+
+  // previousShow: function(){
+  //   $('.left-triangle').click(function(){
+  //     var
+  //   })
+  // }
 
 })
 

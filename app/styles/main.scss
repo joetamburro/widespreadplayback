@@ -163,6 +163,7 @@ body {
         padding-right: 14px;
         background-color: #F8F8F8;
         margin: 0 8px 0 0;
+        border-radius: 4px 4px 0px 0px;
     }
 
     li:active{
@@ -339,6 +340,12 @@ body {
     position: relative;
     top: -60px;
     left: 175px;
+}
+
+.play-active {
+    background: url('images/play-selection.png');
+    height: 30px;
+    width: 30px;
 }
 
 /************* Currently Playing View ***********************************/
@@ -525,7 +532,7 @@ body {
     top: 10px;
     font-size: 14px;
     font-weight: 200;
-    height: 36px;
+    height: 34px;
     width: 178px;
     line-height: 12px;
     text-align: center;
@@ -550,4 +557,13 @@ body {
 .active {
     font-weight: bold !important;
     font-size: 13px !important;
+}
+
+.current-tab {
+        color: rgb(0, 140, 179) !important;
+        padding: 10px;
+        padding-right: 14px;
+        background-color: #F8F8F8;
+        margin: 0 8px 0 0;
+        border-radius: 4px 4px 0px 0px;
 }
