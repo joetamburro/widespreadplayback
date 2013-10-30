@@ -1,16 +1,15 @@
 console.log('hello view script')
-
+// creating a homeview constructor
 HomeView = Backbone.View.extend({
-
+// referencing the home view template
   template: _.template( $('#home-view-template').text() ),
-
+// setting click events
   events: {
     "click #home-setlist li" : "currentSelection",
   },
-
+// when homeview is initialized clear out the setlist
   initialize: function(){
     $('#home-setlist').html('')
-    this.homeNav()
     $('.content-area').append(this.el)
     this.render()
     console.log('rendered home view')
@@ -36,17 +35,21 @@ HomeView = Backbone.View.extend({
     datequery.startsWith("month_day", currentDate)
     datequery.find({
       success: function(results) {
+
         _.each(results, function(result){
-          
-          $("#home-setlist").append('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          var element = $('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          $("#home-setlist").append(element)
 
-          $("#home-setlist li").click(function(){
-
+          element.click(function(){
+// store results in global variabel. if thing gets clicked. lets store all the results in a 
+// using window. just makes it explicit that this is supposed to be a global variable
+              window.currentlyPlayingShowId = result.get('show_id')
+              console.log(window.currentlyPlayingShowId)
               var url = $(this).attr('data')
               var title = $(this).text()
 
-              $(".jp-title ul li").text(title)
-              $("#jquery_jplayer_1").jPlayer("destroy")
+            $(".jp-title ul li").text(title)
+            $("#jquery_jplayer_1").jPlayer("destroy")
             $("#jquery_jplayer_1").jPlayer({
                 ready: function () {
                   $(this).jPlayer("setMedia", {
@@ -64,12 +67,9 @@ HomeView = Backbone.View.extend({
     })
   },
 
-  homeNav: function(){
-    $('nav li').addClass('nav-active')
-  },
-
   currentSelection: function (event){
-    
+    $('#current-setlist li').removeClass('active')
+    $(event.currentTarget).addClass('active')
   },
 
   currentlyPlaying: function (){
@@ -89,6 +89,7 @@ CurrentlyPlayingView = Backbone.View.extend({
 
   initialize: function(){
     $('.content-area').append(this.el)
+    // query.equalTo("show_id", window.currentlyPlayingShowId)
     this.render()
   },
 
@@ -98,7 +99,9 @@ CurrentlyPlayingView = Backbone.View.extend({
     var query = new Parse.Query(Songs)
     // var ShowId = new Parse.Object
 
-    query.equalTo("show_id", "20121230")
+
+
+    query.equalTo("show_id", window.currentlyPlayingShowId)
     query.find({
       success: function(results) {
         _.each(results, function(result){
