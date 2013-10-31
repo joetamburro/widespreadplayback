@@ -73,11 +73,6 @@ HomeView = Backbone.View.extend({
     $(event.currentTarget).addClass('active')
   },
 
-  highlightTab: function (event){
-    $('.navigation-bar li').first().removeClass('current-tab')
-    $('.navigation-bar li').removeClass('current-tab')
-    $(event.currentTarget).addClass('current-tab')
-  },
 
   currentlyPlaying: function (){
     $('.content-area').html('')
