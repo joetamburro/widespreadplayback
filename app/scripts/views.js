@@ -109,7 +109,7 @@ CurrentlyPlayingView = Backbone.View.extend({
 
 
 
-    query.equalTo("show_id", window.currentlyPlayingShowId)
+    query.equalTo("show_id",  window.currentlyPlayingShowId || "20001230")
     query.find({
       success: function(results) {
         _.each(results, function(result){
