@@ -237,6 +237,7 @@ div.jp-audio div.jp-type-single div.jp-progress {
 	width: 455px;
 	height: 3px;
 	top: 5px;
+	background: #fff;
 }
 div.jp-audio div.jp-type-playlist div.jp-progress {
 	left:166px;
@@ -401,11 +402,13 @@ div.jp-duration {
 div.jp-current-time {
 	float: left;
 	display:inline;
+	letter-spacing: 1px;
 }
 div.jp-duration {
 	float: right;
 	display:inline;
 	text-align: right;
+	letter-spacing: 1px;
 }
 
 div.jp-video div.jp-current-time {

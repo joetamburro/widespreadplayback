@@ -6,19 +6,19 @@ HomeView = Backbone.View.extend({
 // setting click events
   events: {
     "click #home-setlist li" : "currentSelection",
-    "click .navigation-bar li": "highlightTab"
-  },
+   },
 // when homeview is initialized clear out the setlist
   initialize: function(){
     $('#home-setlist').html('')
     $('.content-area').append(this.el)
+      // $('.navigation-bar li').navSelection()
     this.render()
     console.log('rendered home view')
   },
 
   render: function(){
     this.$el.append(this.template)
-
+  
     var HomeSongs = Parse.Object.extend("Songs")
     var datequery = new Parse.Query(HomeSongs)
 
@@ -67,16 +67,6 @@ HomeView = Backbone.View.extend({
       }
     })
   },
-
-  // search: function(){
-  //   var SearchSongs = new Parse.Object.extend("Songs")
-  //   var searchquery = new Parse.Query.(SearchSongs)
-
-  //   searchquery.find({
-
-
-  //   })
-  
 
   currentSelection: function (event){
     $('#home-setlist li').removeClass('active')
