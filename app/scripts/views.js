@@ -6,6 +6,8 @@ HomeView = Backbone.View.extend({
 // setting click events
   events: {
     "click #home-setlist li" : "currentSelection",
+    "click .left-triangle" : "priorShow",
+    "click .right-triangle" : "nextShow",
    },
 // when homeview is initialized clear out the setlist
   initialize: function(){
@@ -78,6 +80,120 @@ HomeView = Backbone.View.extend({
     $('.content-area').html('')
     new CurrentlyPlayingView()
   },
+
+  priorShow: function(){
+      
+    console.log('its clear')
+    $('#home-setlist').html('')
+
+      var PriorHomeSongs = Parse.Object.extend("Songs")
+      var priordatequery = new Parse.Query(PriorHomeSongs)
+
+    Date.prototype.priorDate = function() {        
+                                                                       
+            var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based        
+            var dd  = this.getDate().toString();            
+                                
+            return (mm[1]?mm:"0"+mm[0]) + ((dd[1]?dd:"0"+dd[0])-1);
+      };
+
+      var priorDate = new Date().priorDate()
+
+      priordatequery.startsWith("month_day", priorDate)
+      console.log(priorDate)
+      priordatequery.find({
+      success: function(results) {
+
+        _.each(results, function(result){
+          var priorelement = $('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          $("#home-setlist").append(priorelement)
+
+          priorelement.click(function(){
+ 
+// using window. just makes it explicit that this is supposed to be a global variable
+              window.currentlyPlayingShowId = result.get('show_id')
+              // console.log(window.currentlyPlayingShowId)
+              var priorurl = $(this).attr('data')
+              var priortitle = $(this).text()
+
+            $(".jp-title ul li").text(priortitle)
+            $("#jquery_jplayer_1").jPlayer("destroy")
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                  $(this).jPlayer("setMedia", {
+                    mp3: priorurl,
+                    
+                  }).jPlayer("play")
+                },
+                swfPath: "/js",
+                supplied: "mp3"
+              });
+          })
+        })
+
+      }
+      })
+
+    
+  },
+
+  nextShow: function(){
+      
+    console.log('its clear')
+    $('#home-setlist').html('')
+
+      var NextHomeSongs = Parse.Object.extend("Songs")
+      var nextdatequery = new Parse.Query(NextHomeSongs)
+
+    Date.prototype.nextDate = function() {        
+                                                                       
+            var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based        
+            var dd  = this.getDate().toString();            
+                                
+            return (mm[1]?mm:"0"+mm[0]) + ((dd[1]?dd:"0"+dd[0])+1);
+      };
+
+      var nextDate = new Date().nextDate()
+
+      nextdatequery.startsWith("month_day", nextDate)
+      console.log(nextDate)
+ 
+      nextdatequery.find({
+      success: function(results) {
+
+        _.each(results, function(result){
+          var nextelement = $('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          $("#home-setlist").append(nextelement)
+
+          nextelement.click(function(){
+ 
+// using window. just makes it explicit that this is supposed to be a global variable
+              window.currentlyPlayingShowId = result.get('show_id')
+              // console.log(window.currentlyPlayingShowId)
+              var nextrurl = $(this).attr('data')
+              var nexttitle = $(this).text()
+
+            $(".jp-title ul li").text(nexttitle)
+            $("#jquery_jplayer_1").jPlayer("destroy")
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                  $(this).jPlayer("setMedia", {
+                    mp3: priorurl,
+                    
+                  }).jPlayer("play")
+                },
+                swfPath: "/js",
+                supplied: "mp3"
+              });
+          })
+        })
+
+      }
+      })
+
+    
+  },
+ 
 
 }),
 
