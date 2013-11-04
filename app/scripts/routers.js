@@ -26,8 +26,6 @@ AppRouter = Backbone.Router.extend ({
     $('.content-area').html('')
     new CurrentlyPlayingView()
   },
-
-
  
 })
 
