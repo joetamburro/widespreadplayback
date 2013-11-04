@@ -254,12 +254,12 @@ body {
 .today {
     display: inline-block;
     position: relative;
-    top: -25px;
-    right: -6px;
+    top: -3px;
+    right: -13px;
     color: rgb(115, 115, 115);
     height: 14px;
     line-height: 14px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Quantico', sans-serif;
     text-transform: uppercase;
 }
@@ -338,8 +338,8 @@ body {
 
 #home-year {
     position: relative;
-    top: -60px;
-    left: 175px;
+    top: -51px;
+    left: 200px;
 }
 
 .play-active {
@@ -528,29 +528,24 @@ body {
 
 .stats-button {
     position: absolute;
-    right: 380px;
-    top: 10px;
+    left: 233px;
+    top: 6px;
     font-size: 14px;
     font-weight: 200;
-    height: 34px;
-    width: 178px;
-    line-height: 12px;
+    height: 30px;
+    width: 120px;
+    line-height: 8px;
     text-align: center;
     border-radius: 0;
     color: rgb(255, 255, 255);
     background-color: rgb(20, 123, 204);
     border-color: rgb(20, 123, 204);
     border-radius: 4px;
-    -webkit-transition: .5s ease;
     z-index: 1;
-    transition: .4s ease;
 }
 
 .stats-button:hover {
-    width: 140px;
-    right: 400px;
     color: rgb(255, 255, 255);
-    border-radius: 0;
     background-color: rgb(20, 123, 204);
     border-color: rgb(20, 123, 204);
 }

@@ -33,9 +33,11 @@ HomeView = Backbone.View.extend({
       };  
     
     var d = new Date ();
-    window.currentDate = d.formattedDate()
+    window.currentDate =  d.formattedDate() 
+
 
     datequery.startsWith("month_day", window.currentDate)
+    console.log(window.currentDate)
     datequery.find({
       success: function(results) {
 
@@ -83,7 +85,6 @@ HomeView = Backbone.View.extend({
 
   priorShow: function(){
       
-    console.log('its clear')
     $('#home-setlist').html('')
 
       var PriorHomeSongs = Parse.Object.extend("Songs")
@@ -150,19 +151,19 @@ HomeView = Backbone.View.extend({
             var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based        
             var dd  = this.getDate().toString();            
                                 
-            return (mm[1]?mm:"0"+mm[0]) + ((dd[1]?dd:"0"+dd[0])+1);
+            return (mm[1]?mm:"0"+mm[0]) + ((dd[1]?dd:"0"+dd[0])+2);
       };
 
       var nextDate = new Date().nextDate()
-
-      nextdatequery.startsWith("month_day", nextDate)
       console.log(nextDate)
+      nextdatequery.startsWith("month_day", nextDate)
  
       nextdatequery.find({
       success: function(results) {
 
         _.each(results, function(result){
           var nextelement = $('<li data="'+ result.get('url') +'">'+result.get('title')+'</li>')
+          console.log(nextelement)
           $("#home-setlist").append(nextelement)
 
           nextelement.click(function(){
