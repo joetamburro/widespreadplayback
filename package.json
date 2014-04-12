@@ -2,7 +2,8 @@
   "name": "widespreadplaybak",
   "version": "0.0.0",
   "dependencies": {
-    "compass": "~0.1.0"
+    "compass": "~0.1.0",
+    "backbone": "^1.1.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
