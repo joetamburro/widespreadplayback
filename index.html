@@ -1,0 +1,302 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Widespread Playback</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="/styles/jplayer.blue.monday.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+        <script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+    </head>
+    
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <div class="glyphicon glyphicon-expand"></div>
+                </ul>
+                <h3 class="text-muted">Widespread Playback</h3>
+            
+            </div>
+
+            <div class="jumbotron">
+
+                <div class="navigation-bar">
+
+                    <ul>
+                        <a href="#/home"><li class="nav">Home</li></a>
+                        <li class="nav">Date</li>
+                        <li class="nav">Location</li>
+                        <a href="#/currently-playing"><li class="nav">Currently Playing</li></a>
+                    </ul>
+
+                    <input id="main-search" type="search">
+
+
+                    
+                    <button type="button" class="btn btn-primary btn-sm submit">Search</button>
+
+                </div>
+
+<!-- ******************************* Content Area **************************************** -->
+
+                <div class="content-area">
+
+                </div>
+
+<!-- ******************************* End Content Area ************************************ -->
+
+                <div class="jumbo-footer">
+
+<!-- ********************************  Start JPlayer ************************************* -->
+                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                    <div id="jp_container_1" class="jp-audio">
+                      
+                      <div class="jp-type-single">
+                        
+                        <div class="jp-title title">
+                          <ul>
+                            <li>Track</li>
+                          </ul>
+                        </div>
+
+                        <div class="jp-gui jp-interface">
+                          
+                          <ul class="jp-controls">
+                            <li id="pre">
+                                <a href="javascript:;" class="jp-previous" tabindex="1">previous</a>
+                            </li>
+                            <li><a href="javascript:;" class="jp-play play" tabindex="1">play</a></li>
+                            <li id="forward">
+                                <a href="javascript:;" class="jp-next" tabindex="1">play</a>
+                            </li>
+                            <li><a href="javascript:;" class="jp-pause pause" tabindex="1">pause</a></li>
+                           <!--  <li><a href="javascript:;" class="jp-stop stop" tabindex="1">stop</a></li> -->
+                            <li><a href="javascript:;" class="jp-mute mute" tabindex="1" title="mute">mute</a></li>
+                            <li><a href="javascript:;" class="jp-unmute unmute" tabindex="1" title="unmute">unmute</a></li>
+                            <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                          </ul>
+
+                          <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                              <div class="jp-play-bar"></div>
+                            </div>
+                          </div>
+
+                          <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                          </div>
+
+                          <div class="jp-time-holder">
+                            <div class="jp-current-time"></div>
+                            <div class="jp-duration"></div>
+                            <ul class="jp-toggles">
+                              <li><a href="javascript:;" class="jp-repeat repeat" tabindex="1" title="repeat">repeat</a></li>
+                              <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                        <div class="jp-no-solution">
+                          <span>Update Required</span>
+                          To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+
+                      </div>
+
+                    </div>
+<!-- ************************************* End JPlayer ************************************ -->
+                </div>         
+             
+            </div>
+
+
+            <div class="footer">
+                <p>♥ from PanicStream, Masondesu, JHendley25, and Old Joe</p>
+            </div>
+
+        </div>
+
+<!-- ******************************** Start Home View***********************************************-->
+
+        <script type="text/template" id="home-view-template">
+               
+              <a data-toggle="modal" href="#myModal" class="btn btn-lg stats-button">Stats for 2013</a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">2013</h4>
+                    </div>
+                    <div class="modal-body">
+                      
+                        <div class="first-time-played">
+                            <h4>First Time Played</h4>
+                            <span class="ftp-content"></span>
+                        </div>
+
+                        <div class="least-played">
+                            <h4>Least Played Song</h4>
+                            <span class="ftp-content"></span>
+                        </div>
+
+                        <div class="most-played">
+                            <h4>Most Played Song</h4>
+                            <span class="ftp-content"></span>
+                        </div>
+
+         
+                    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+                    
+            <div class="today">Today in WSP History</div>
+            <div class="home-combo">
+                <select id="home-year">
+                    <option value="1996" selected>Select Year</option>
+                    <option value="1996" ></option>
+                </select>   
+            </div>
+                  
+            <div class="left-arrow">  
+                <div class="left-triangle">Previous Show</div>
+            </div>
+                    
+
+            <div class="setlist-scroll">
+               <ol id="home-setlist">
+
+               </ol>
+            </div>
+
+             <div class="right-arrow">  
+                <div class="right-triangle">Next Show</div>
+            </div>
+
+
+        </script>
+<!-- ******************************** End Home View ***********************************************-->
+
+<!-- *************************** Start CurrentlyPlaying View **********************************-->
+        <script type="text/template" id="currently-playing-template">
+
+            <div class="today">May 5, 2010
+            <span id="current-locale">Greenville, SC</span>
+            <span id="current-venue">Bi-Lo Center</span>
+            </div>
+                    
+            <div class="home-combo">
+ 
+            </div>
+            <div class="left-arrow">  
+                <div class="outer-box-left">
+                    <div class="inner-box-left">
+                        <div class="left-triangle">Previous Show
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setlist-scroll">
+               <ol id="current-setlist">
+
+               </ol>
+            </div>
+
+             <div class="right-arrow">  
+                <div class="outer-box-left">
+                    <div class="inner-box-left">
+                        <div class="right-triangle">Next Show
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </script>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="/scripts/jQuery.jPlayer.2.4.0 2/jquery.jplayer.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                  $(this).jPlayer("setMedia", {
+                    mp3: "",
+                    
+                  });
+                },
+                swfPath: "/js",
+                supplied: "mp3"
+              });
+            });
+        </script>
+
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/views.js"></script>
+        <script src="scripts/models.js"></script>
+        <script src="scripts/collections.js"></script>
+        <script src="scripts/routers.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+        <script src="bower_components/sass-bootstrap/js/button.js"></script>
+        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
